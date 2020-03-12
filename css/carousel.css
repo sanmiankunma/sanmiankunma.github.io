@@ -1,5 +1,5 @@
 @keyframes jssorl-009-spin {from {transform:rotate(0);} to {transform:rotate(360deg);}}
-.jssorl-009-spin img {animation-name:jssorl-009-spin;animation-duration:1.6s;animation-iteration-count:infinite;animation-timing-function:linear;}
+.jssorl-009-spin img {animation-name:jssorl-009-spin;animation-duration:1.6s;animation-iteration-count:infinite;animation-timing-function:linear;border-radius:4px;}
 .jssorb051 .i {position:absolute;cursor:pointer;}
 .jssorb051 .i .b {fill:#fff;fill-opacity:.5;transition:all .2s;}
 .jssorb051 .i:hover .b {fill-opacity:1;}
