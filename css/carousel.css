@@ -1,0 +1,17 @@
+@keyframes jssorl-009-spin {from {transform:rotate(0);} to {transform:rotate(360deg);}}
+.jssorl-009-spin img {animation-name:jssorl-009-spin;animation-duration:1.6s;animation-iteration-count:infinite;animation-timing-function:linear;}
+.jssorb051 .i {position:absolute;cursor:pointer;}
+.jssorb051 .i .b {fill:#fff;fill-opacity:.5;transition:all .2s;}
+.jssorb051 .i:hover .b {fill-opacity:1;}
+.jssorb051 .iav .b {fill-opacity:1;}
+.jssora051 {display:block;position:absolute;cursor:pointer;}
+.jssora051:hover {opacity:1 !important;}
+
+.carousel,.carousel-item {position:relative;width:980px;height:392px;overflow:hidden;border-radius:4px;}
+.carousel-nav {position:absolute;bottom:12px;}
+.carousel-dots {width:16px;height:16px;}
+.carousel-arrowleft {width:60px;height:60px;left:20px;font-size:34px;text-align:center;line-height:60px;color:#FFFFFF;opacity:0;transition:all .3s}
+.carousel-arrowright {width:60px;height:60px;right:20px;font-size:34px;text-align:center;line-height:60px;color:#FFFFFF;opacity:0;transition:all .3s}
+.carousel:hover .carousel-arrowleft,.carousel:hover .carousel-arrowright {opacity:.9;}
+
+@media screen and (max-width: 1087px) {.carousel-arrowleft,.carousel-arrowright{display:none;}}

@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html  lang="zh">
+<head>
+    <meta charset="utf-8" />
+
+<meta name="generator" content="Hexo 3.7.1" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+<title>建站日志 - 三面困马</title>
+
+
+    <meta name="description" content="闲来无事心血来潮搭建了这个博客，用的是 Hexo + GitHub 的方法。作为小白，完全依靠网上的教程操作完成，过程不算太复杂，其实还挺有趣。 在页面效果上，虽说自定义程度高，但由于不具备代码相关知识，对于一些想修改的地方只能慢慢琢磨和尝试，并依旧是借助网络的力量。 不过说到底，我也并没有什么东西可写，至少目前没有，所以这博客空荡荡如你所见，但对主题的小修小改却又莫名感兴趣，以致于最后似乎重点和">
+<meta property="og:type" content="article">
+<meta property="og:title" content="建站日志">
+<meta property="og:url" content="http://sanmiankunma.github.io/posts/logs/index.html">
+<meta property="og:site_name" content="三面困马">
+<meta property="og:description" content="闲来无事心血来潮搭建了这个博客，用的是 Hexo + GitHub 的方法。作为小白，完全依靠网上的教程操作完成，过程不算太复杂，其实还挺有趣。 在页面效果上，虽说自定义程度高，但由于不具备代码相关知识，对于一些想修改的地方只能慢慢琢磨和尝试，并依旧是借助网络的力量。 不过说到底，我也并没有什么东西可写，至少目前没有，所以这博客空荡荡如你所见，但对主题的小修小改却又莫名感兴趣，以致于最后似乎重点和">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://ae01.alicdn.com/kf/Uddabe1b4e0f74575ace2bcb6abf8c1f4q.jpg">
+<meta property="og:updated_time" content="2020-01-12T09:39:55.783Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="建站日志">
+<meta name="twitter:description" content="闲来无事心血来潮搭建了这个博客，用的是 Hexo + GitHub 的方法。作为小白，完全依靠网上的教程操作完成，过程不算太复杂，其实还挺有趣。 在页面效果上，虽说自定义程度高，但由于不具备代码相关知识，对于一些想修改的地方只能慢慢琢磨和尝试，并依旧是借助网络的力量。 不过说到底，我也并没有什么东西可写，至少目前没有，所以这博客空荡荡如你所见，但对主题的小修小改却又莫名感兴趣，以致于最后似乎重点和">
+<meta name="twitter:image" content="https://ae01.alicdn.com/kf/Uddabe1b4e0f74575ace2bcb6abf8c1f4q.jpg">
+
+
+
+
+
+
+
+<link rel="icon" href="/images/favicon.png">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css">
+
+
+    
+    
+<style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+
+    
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+
+    
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    MathJax.Hub.Config({
+        'HTML-CSS': {
+            matchFontHeight: false
+        },
+        SVG: {
+            matchFontHeight: false
+        },
+        CommonHTML: {
+            matchFontHeight: false
+        },
+        tex2jax: {
+            inlineMath: [
+                ['$','$'],
+                ['\\(','\\)']
+            ]
+        }
+    });
+});
+</script>
+    
+    
+<link rel="stylesheet" href="/css/back-to-top.css">
+
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', '');
+</script>
+
+    
+    <script>
+var _hmt = _hmt || [];
+(function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+})();
+</script>
+    
+    <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+    
+    <link rel="stylesheet" href="/css/progressbar.css">
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+    
+    <script async="" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> 
+    
+
+
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/night.css">
+<link rel="stylesheet" href="/css/carousel.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@1.2/dist/Meting.min.js"></script>
+</head>
+<body class="is-2-column">
+    <script type="text/javascript" src="/js/night.js"></script>
+
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/">
+            
+                <img class="logo-img" src="/images/logo.svg" alt="建站日志" height="28" />
+                <img class="logo-img-dark" src="/images/logo-dark.svg" alt="建站日志" height="28" />
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start is-hidden-mobile">
+                
+                    <a class="navbar-item"
+                href="/">首页</a>
+                
+                    <a class="navbar-item"
+                href="/archives">归档</a>
+                
+                    <a class="navbar-item"
+                href="/categories">分类</a>
+                
+                    <a class="navbar-item"
+                href="/tags">标签</a>
+                
+                    <a class="navbar-item"
+                href="/gallery">图册</a>
+                
+                    <a class="navbar-item"
+                href="/filmnotes">影记</a>
+                
+                    <a class="navbar-item"
+                href="/about">关于</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                <a class="navbar-item night" id="night-nav" href="javascript:;">
+                    <i class="fas fa-moon" id="night-icon"></i>
+                </a>
+                
+                <a class="navbar-item search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+                <div class="navbar-item dropdown is-hidden-tablet">
+                    <div class="dropdown-trigger">
+                        <i class="fas fa-bars" aria-hidden="true" aria-haspopup="true" aria-controls="dropdown-menu"></i>
+                    </div>
+                    <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                        <div class="dropdown-content">
+                        
+                            
+                            <a class="dropdown-item" href="/">首页</a>
+                            
+                            <a class="dropdown-item" href="/archives">归档</a>
+                            
+                            <a class="dropdown-item" href="/categories">分类</a>
+                            
+                            <a class="dropdown-item" href="/tags">标签</a>
+                            
+                            <a class="dropdown-item" href="/gallery">图册</a>
+                            
+                            <a class="dropdown-item" href="/filmnotes">影记</a>
+                            
+                            <a class="dropdown-item" href="/about">关于</a>
+                            
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-8-tablet is-8-desktop is-9-widescreen has-order-2 column-main">
+<div class="card">
+    
+    <div class="card-image">
+        <span  class="image">
+            <img class="thumbnail" src="https://ae01.alicdn.com/kf/Uddabe1b4e0f74575ace2bcb6abf8c1f4q.jpg" alt="建站日志">
+        </span>
+    </div>
+    
+    <div class="card-content article article-padding  ">
+        
+        <h1 class="has-text-black-ter is-size-3 is-size-title-mobile has-text-weight-semibold">
+            
+                建站日志
+            
+        </h1>
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-04-21T16:00:00.000Z">2018-04-22</time>
+                
+                
+                
+            </div>
+            
+        </div>
+        <div class="content">
+            <p>闲来无事心血来潮搭建了这个博客，用的是 Hexo + GitHub 的方法。作为小白，完全依靠网上的教程操作完成，过程不算太复杂，其实还挺有趣。</p>
+<p>在页面效果上，虽说自定义程度高，但由于不具备代码相关知识，对于一些想修改的地方只能慢慢琢磨和尝试，并依旧是借助网络的力量。</p>
+<p>不过说到底，我也并没有什么东西可写，至少目前没有，所以这博客空荡荡如你所见，但对主题的小修小改却又莫名感兴趣，以致于最后似乎重点和乐趣不在写内容上，全在折腾主题上了。</p>
+<p>所以本站将长期处于测试和优化阶段…… </p>
+<p><br /></p>
+
+<p><span id="sitetime"></span><script language=javascript>function siteTime(){
+window.setTimeout("siteTime()", 1000);
+var seconds = 1000
+var minutes = seconds * 60
+var hours = minutes * 60
+var days = hours * 24
+var years = days * 365
+var today = new Date()
+var todayYear = today.getFullYear()
+var todayMonth = today.getMonth()
+var todayDate = today.getDate()
+var todayHour = today.getHours()
+var todayMinute = today.getMinutes()
+var todaySecond = today.getSeconds()
+var t1 = Date.UTC(2018,03,17,16,05,23) //Since 2018-04-17
+var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond)
+var diff = t2-t1
+var diffYears = Math.floor(diff/years)
+var diffDays = Math.floor((diff/days)-diffYears*365)
+var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours)
+var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes)
+var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds)
+document.getElementById("sitetime").innerHTML=" 本站已运行 "+diffYears+" 年 "+diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分 "+diffSeconds+" 秒 "
+}
+siteTime()</script></p>
+
+<p><font color="gray" size="2">2020-01</font><br>增加夜间模式和首页轮播图<sup>Beta</sup></p>
+<p><font color="gray" size="2">2019-07</font><br>升级主题至 <a href="https://github.com/ppoffice/hexo-theme-icarus">Icarus v2</a><br>自定义修改部分页面效果</p>
+<p><font color="gray" size="2">2018-05</font><br>更换主题为 <a href="https://github.com/ppoffice/hexo-theme-icarus">Icarus</a> </p>
+<p><font color="gray" size="2">2018-04-17</font><br>建站，选用主题 <a href="https://github.com/viosey/hexo-theme-material">Material</a> </p>
+
+        </div>
+        <br />
+        
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/posts/test-post/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">测试页面 Test post</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/posts/hello-world/">
+                <span class="level-item">Hello World</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+                
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-3-widescreen  has-order-1 column-left ">
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <nav class="level">
+            <div class="level-item has-text-centered" style="flex-shrink: 1">
+                <div>
+                    
+                    <figure class="image is-128x128 has-mb-6">
+                        <img class="is-rounded" src="/images/avatar.jpg" alt="困马">
+                    </figure>
+                    
+                    <p class="is-size-4 is-block has-text-grey-darker">
+                        困马
+                    </p>
+                    
+                    
+                    <p class="is-size-6 is-block">
+                        世界等你发现
+                    </p>
+                    
+                    
+                </div>
+            </div>
+        </nav>
+        <nav class="level menu-list is-mobile" style="margin-bottom:1rem">
+            <div class="level-item has-text-centered is-marginless">
+                <a href="/archives/">
+                    <p class="heading">
+                        文章
+                    </p>
+                    <p class="title has-text-weight-normal">
+                        3
+                    </p>
+                </a>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <a href="/categories/">
+                    <p class="heading">
+                        分类
+                    </p>
+                    <p class="title has-text-weight-normal">
+                        1
+                    </p>
+                </a>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <a href="/tags/">
+                    <p class="heading">
+                        标签
+                    </p>
+                    <p class="title has-text-weight-normal">
+                        2
+                    </p>
+                </a>
+            </div>
+        </nav>
+        
+        <div class="level">
+            <a class="level-item button is-link is-rounded" href="/about">
+                关于我</a>
+        </div>
+        
+    </div>
+</div>
+    
+        
+    
+    
+        <div class="column-right-shadow is-hidden-widescreen ">
+        
+        </div>
+    
+</div>
+
+                
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <div class="footer-logo is-block has-mb-6">
+                    
+                    <img class="logo-img" src="/images/logo.svg" alt="建站日志" height="28" />
+                    <img class="logo-img-dark" src="/images/logo-dark.svg" alt="建站日志" height="28" />
+                
+                </div>
+                <p class="is-size-7">
+                &copy; 2018-2020 困马 │ 
+                Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> & <a 
+                        href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                <a class="button has-link-black-ter is-white fab fa-weibo">
+                <a class="button has-link-black-ter is-white fab fa-weixin weixin">
+                    <img class="weixin-qrcode" src="/images/weixinQR.jpg">
+                <a class="button has-link-black-ter is-white fab fa-twitter">
+                <a class="button has-link-black-ter is-white fas fa-envelope">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("zh-CN");</script>
+
+
+<script>
+var IcarusThemeSettings = {
+    site: {
+        url: 'http://sanmiankunma.github.io',
+        external_link: {"enable":true,"exclude":[]}
+    },
+    article: {
+        highlight: {
+            clipboard: true,
+            fold: 'unfolded'
+        }
+    }
+};
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+
+
+
+
+
+<script src="/js/animation.js"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/lg-zoom@1.1.0/dist/lg-zoom.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/lg-thumbnail@1.1.0/dist/lg-thumbnail.min.js" defer></script>
+<script src="/js/gallery.js" defer></script>
+
+
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        });
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    MathJax.Hub.Config({
+        'HTML-CSS': {
+            matchFontHeight: false
+        },
+        SVG: {
+            matchFontHeight: false
+        },
+        CommonHTML: {
+            matchFontHeight: false
+        },
+        tex2jax: {
+            inlineMath: [
+                ['$','$'],
+                ['\\(','\\)']
+            ]
+        }
+    });
+});
+</script>
+
+
+<a id="back-to-top" title="" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+<script src="/js/back-to-top.js" defer></script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', '');
+</script>
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+
+<link rel="stylesheet" href="/css/progressbar.css">
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+<script async="" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> 
+
+
+
+<script src="/js/main.js" defer></script>
+
+<script src="js/carousel.js"></script>
+<script type="text/javascript">jssor_1_slider_init();</script> 
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="请输入关键字..." />
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(无标题)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script src="/js/insight.js" defer></script>
+<link rel="stylesheet" href="/css/search.css">
+<link rel="stylesheet" href="/css/insight.css">
+    
+</body>
+</html>
