@@ -1,17 +1,24 @@
-@keyframes jssorl-009-spin {from {transform:rotate(0);} to {transform:rotate(360deg);}}
-.jssorl-009-spin img {animation-name:jssorl-009-spin;animation-duration:1.6s;animation-iteration-count:infinite;animation-timing-function:linear;border-radius:4px;}
-.jssorb051 .i {position:absolute;cursor:pointer;}
-.jssorb051 .i .b {fill:#fff;fill-opacity:.5;transition:all .2s;}
-.jssorb051 .i:hover .b {fill-opacity:1;}
-.jssorb051 .iav .b {fill-opacity:1;}
-.jssora051 {display:block;position:absolute;cursor:pointer;}
-.jssora051:hover {opacity:1 !important;}
+.train_banner{width:100%;overflow:hidden;position:relative;max-height: 300px;border-radius:4px;}
+.train_banner .banner_images{width:1000%;}
+.train_banner .banner_images li{float:left;width:10%}
+.train_banner .banner_images li a{display:block;width:100%}
+.train_banner .banner_images li a img{display:block;width:100%;}
+.train_banner .banner_index{position:absolute;left:50%;transform:translateX(-50%);bottom:5px;}
+.train_banner .banner_index li{transition:all .3s;margin:6px;float:left;width:9px;height:9px;border-radius:50%;background:#FFFFFF;opacity:.5;}
+.train_banner .banner_index li.current{transition:all .3s;opacity:1;}
+.train_banner .banner_index li:hover{cursor:pointer;opacity:1;}
+.train_banner_left{cursor:pointer;position:absolute;top:50%;transform:translateY(-50%);height:45px;width:45px;border-radius:50%;color:#FFFFFF;}
+.train_banner_right{cursor:pointer;position:absolute;top:50%;transform:translateY(-50%);height:45px;width:45px;border-radius:50%;color:#FFFFFF;}
+.train_banner_li{position:absolute;font-size:25px;top:50%;left:50%;transform:translate(-50%, -50%);opacity:.9;transition:all .2s}
+.train_banner_left:hover .train_banner_li,.train_banner_right:hover .train_banner_li{display:block;opacity:1 !important;}
 
-.carousel,.carousel-item {position:relative;width:980px;height:392px;overflow:hidden;border-radius:4px;}
-.carousel-nav {position:absolute;bottom:12px;}
-.carousel-dots {width:16px;height:16px;}
-.carousel-arrowleft {width:60px;height:60px;left:20px;font-size:34px;text-align:center;line-height:60px;color:#FFFFFF;opacity:0;transition:all .3s}
-.carousel-arrowright {width:60px;height:60px;right:20px;font-size:34px;text-align:center;line-height:60px;color:#FFFFFF;opacity:0;transition:all .3s}
-.carousel:hover .carousel-arrowleft,.carousel:hover .carousel-arrowright {opacity:.9;}
+.train_banner_left{visibility:hidden;opacity:0;left:4%;transition:all .2s ease-out;}
+.train_banner_right{visibility:hidden;opacity:0;right:4%;transition:all .2s ease-out;}
+.train_banner:hover .train_banner_left{visibility:visible;opacity:1;left:2%;}
+.train_banner:hover .train_banner_right{visibility:visible;opacity:1;right:2%;}
 
-@media screen and (max-width: 1087px) {.carousel-arrowleft,.carousel-arrowright{display:none;}}
+@media screen and (max-width: 1087px) {
+    .train_banner_left,.train_banner_right,.train_banner_li{display:none;}
+    .train_banner .banner_index{bottom:2px;}
+    .train_banner .banner_index li{width:7px;height:7px;} 
+}

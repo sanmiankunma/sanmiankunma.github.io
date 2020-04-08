@@ -650,11 +650,9 @@ figure.highlight .section {
 [class*="hint"] {
   position: relative;
   display: inline-block;
-  color: #363636;
-  box-shadow: inset 0 -1px #3273dc;
+  color: #3273dc;
 }
 [class*="hint"]:hover {
-  color: #3273dc;
   cursor: help;
 }
 [class*="hint"]:before,
