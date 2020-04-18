@@ -489,12 +489,6 @@ img.thumbnail-small {
   margin-left: 0.5em;
 }
 @media screen and (max-width: 768px) {
-  .content {
-    font-size: 1.1rem;
-  }
-  .content blockquote.pullquote {
-    font-size: 1.1rem;
-  }
   .content h1 {
     font-size: 1.55rem;
   }
@@ -507,6 +501,12 @@ img.thumbnail-small {
   .content h4,
   .content h5 {
     font-size: 1.15rem;
+  }
+  .article .content {
+    font-size: 1.1rem;
+  }
+  .article .content blockquote.pullquote {
+    font-size: 1.1rem;
   }
 }
 .article-title-index {
