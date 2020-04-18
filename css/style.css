@@ -490,10 +490,10 @@ img.thumbnail-small {
 }
 @media screen and (max-width: 768px) {
   .article .content {
-    font-size: 1.1rem;
+    font-size: 1.14rem;
   }
   .article .content blockquote.pullquote {
-    font-size: 1.1rem;
+    font-size: 1.14rem;
   }
   .article .content h1 {
     font-size: 1.55rem;
