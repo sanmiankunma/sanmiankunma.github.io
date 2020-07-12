@@ -18,7 +18,7 @@
 <meta property="og:description" content="闲来无事心血来潮搭建了这个博客，用的是 Hexo + GitHub 的方法。作为小白，完全依靠网上的教程操作完成，过程不算太复杂，其实还挺有趣。 在页面效果上，虽说自定义程度高，但由于不具备代码相关知识，对于一些想修改的地方只能慢慢琢磨和尝试，并依旧是借助网络的力量。 不过说到底，我也并没有什么东西可写，至少目前没有，所以这博客空荡荡如你所见，但对主题的小修小改却又莫名感兴趣，以致于最后似乎重点和">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://ae01.alicdn.com/kf/Uddabe1b4e0f74575ace2bcb6abf8c1f4q.jpg">
-<meta property="og:updated_time" content="2020-01-12T09:39:55.783Z">
+<meta property="og:updated_time" content="2020-07-12T15:45:18.719Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="建站日志">
 <meta name="twitter:description" content="闲来无事心血来潮搭建了这个博客，用的是 Hexo + GitHub 的方法。作为小白，完全依靠网上的教程操作完成，过程不算太复杂，其实还挺有趣。 在页面效果上，虽说自定义程度高，但由于不具备代码相关知识，对于一些想修改的地方只能慢慢琢磨和尝试，并依旧是借助网络的力量。 不过说到底，我也并没有什么东西可写，至少目前没有，所以这博客空荡荡如你所见，但对主题的小修小改却又莫名感兴趣，以致于最后似乎重点和">
@@ -120,8 +120,9 @@ var _hmt = _hmt || [];
 
 
 <link rel="stylesheet" href="/css/style.css">
+
 <link rel="stylesheet" href="/css/night.css">
-<link rel="stylesheet" href="/css/carousel.css">
+<link rel="stylesheet" href="/css/swiper.css">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.css">
 <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js"></script>
@@ -270,6 +271,7 @@ document.getElementById("sitetime").innerHTML=" 本站已运行 "+diffYears+" �
 }
 siteTime()</script></p>
 
+<p><font color="gray" size="2">2020-07</font><br>完善轮播图</p>
 <p><font color="gray" size="2">2020-01</font><br>增加夜间模式和首页轮播图<sup>Beta</sup></p>
 <p><font color="gray" size="2">2019-07</font><br>升级主题至 <a href="https://github.com/ppoffice/hexo-theme-icarus">Icarus v2</a><br>自定义修改部分页面效果</p>
 <p><font color="gray" size="2">2018-05</font><br>更换主题为 <a href="https://github.com/ppoffice/hexo-theme-icarus">Icarus</a> </p>
@@ -551,8 +553,33 @@ var _hmt = _hmt || [];
 
 <script src="/js/main.js" defer></script>
 
-<script src="js/carousel.js"></script>
-<script type="text/javascript">jssor_1_slider_init();</script> 
+<script src="js/swiper.min.js"></script>
+<script>
+var mySwiper = new Swiper('.swiper-container', {
+    speed: 500,
+    loop: true,
+    autoplay: {
+        delay: 3500,
+        stopOnLastSlide: false,
+        disableOnInteraction: false,
+        },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable :true,
+    },
+});
+
+mySwiper.el.onmouseover = function(){
+    mySwiper.autoplay.stop();
+}
+mySwiper.el.onmouseleave = function(){
+    mySwiper.autoplay.start();
+}
+</script>
 
 
     

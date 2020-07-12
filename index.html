@@ -116,8 +116,9 @@ var _hmt = _hmt || [];
 
 
 <link rel="stylesheet" href="/css/style.css">
+
 <link rel="stylesheet" href="/css/night.css">
-<link rel="stylesheet" href="/css/carousel.css">
+<link rel="stylesheet" href="/css/swiper.css">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.css">
 <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js"></script>
@@ -209,54 +210,44 @@ var _hmt = _hmt || [];
             <div class="columns">
                 <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
 <div class="card">
-  <div id="jssor_1" class="carousel"> 
-    <div data-u="slides" class="carousel-item">
-      
-      <div data-p="170.00">
-        <a href="/null" target="_blank" rel="noopener">
-          <img data-u="image" src="https://ae01.alicdn.com/kf/U7b41b2668076482aa4e7bfb037ef69ccy.jpg" alt="null" />
-        </a> 
-      </div>
-      
-      <div data-p="170.00">
-        <a href="/null" target="_blank" rel="noopener">
-          <img data-u="image" src="https://ae01.alicdn.com/kf/Hf7a555bf12344a1d9cc23db4236c13c1Z.jpg" alt="null" />
-        </a> 
-      </div>
-      
-      <div data-p="170.00">
-        <a href="/null" target="_blank" rel="noopener">
-          <img data-u="image" src="https://ae01.alicdn.com/kf/Hcc4113fab116465cb9515ad95795ef88n.jpg" alt="null" />
-        </a> 
-      </div>
-      
-      <div data-p="170.00">
-        <a href="/null" target="_blank" rel="noopener">
-          <img data-u="image" src="https://ae01.alicdn.com/kf/H3814752f54b046168e92817cce85595eC.jpg" alt="null" />
-        </a> 
-      </div>
-      
-      <div data-p="170.00">
-        <a href="/null" target="_blank" rel="noopener">
-          <img data-u="image" src="https://ae01.alicdn.com/kf/H08392c162fb64b41bda8543fe613d05bj.jpg" alt="null" />
-        </a> 
-      </div>
-      
-    </div>
-    <div data-u="navigator" class="jssorb051 carousel-nav" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
-      <div data-u="prototype" class="i carousel-dots">
-        <svg viewbox="0 0 16000 16000">
-          <circle class="b" cx="8000" cy="8000" r="5800"></circle>
-        </svg>
-      </div>
-    </div>
-    <div data-u="arrowleft" class="jssora051 carousel-arrowleft" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
-      <i class="fa fa-chevron-left" aria-hidden="true"></i>
-    </div>
-    <div data-u="arrowright" class="jssora051 carousel-arrowright" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
-      <i class="fa fa-chevron-right" aria-hidden="true"></i>
-    </div>
-  </div>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+        
+				<div class="swiper-slide">
+          <a href="/null" target="_blank" rel="noopener">
+            <img data-u="image" src="https://ae01.alicdn.com/kf/U7b41b2668076482aa4e7bfb037ef69ccy.jpg" alt="null" />
+          </a>
+        </div>
+        
+				<div class="swiper-slide">
+          <a href="/null" target="_blank" rel="noopener">
+            <img data-u="image" src="https://ae01.alicdn.com/kf/Hf7a555bf12344a1d9cc23db4236c13c1Z.jpg" alt="null" />
+          </a>
+        </div>
+        
+				<div class="swiper-slide">
+          <a href="/null" target="_blank" rel="noopener">
+            <img data-u="image" src="https://ae01.alicdn.com/kf/Hcc4113fab116465cb9515ad95795ef88n.jpg" alt="null" />
+          </a>
+        </div>
+        
+				<div class="swiper-slide">
+          <a href="/null" target="_blank" rel="noopener">
+            <img data-u="image" src="https://ae01.alicdn.com/kf/H3814752f54b046168e92817cce85595eC.jpg" alt="null" />
+          </a>
+        </div>
+        
+				<div class="swiper-slide">
+          <a href="/null" target="_blank" rel="noopener">
+            <img data-u="image" src="https://ae01.alicdn.com/kf/H08392c162fb64b41bda8543fe613d05bj.jpg" alt="null" />
+          </a>
+        </div>
+        
+			</div>
+			<div class="swiper-button-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+			<div class="swiper-button-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+			<div class="swiper-pagination"></div>
+		</div>
 </div>
 
 <div class="card notification is-warning">
@@ -870,8 +861,33 @@ var _hmt = _hmt || [];
 
 <script src="/js/main.js" defer></script>
 
-<script src="js/carousel.js"></script>
-<script type="text/javascript">jssor_1_slider_init();</script> 
+<script src="js/swiper.min.js"></script>
+<script>
+var mySwiper = new Swiper('.swiper-container', {
+    speed: 500,
+    loop: true,
+    autoplay: {
+        delay: 3500,
+        stopOnLastSlide: false,
+        disableOnInteraction: false,
+        },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable :true,
+    },
+});
+
+mySwiper.el.onmouseover = function(){
+    mySwiper.autoplay.stop();
+}
+mySwiper.el.onmouseleave = function(){
+    mySwiper.autoplay.start();
+}
+</script>
 
 
     

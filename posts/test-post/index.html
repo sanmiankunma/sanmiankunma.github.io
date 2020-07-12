@@ -19,7 +19,7 @@
 <meta property="og:description" content="这是一篇测试文章，测试文章内容显示效果  媒体内容 其他   测试标题一测试测试测试中文字体链接测试测试测试 Title Test 1test test test Hyperlink test test test test 测试标题二测试测试测试测试测试测试测试测试测试  引文测试  测试测试测试测试测试测试测试测试测试 Title Test 2test test codeblock test t">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://ae01.alicdn.com/kf/Ub2dae20b752c4e2291936e1e0f313967t.jpg">
-<meta property="og:updated_time" content="2020-03-01T07:56:26.661Z">
+<meta property="og:updated_time" content="2020-07-12T15:41:39.158Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="测试页面 Test post">
 <meta name="twitter:description" content="这是一篇测试文章，测试文章内容显示效果  媒体内容 其他   测试标题一测试测试测试中文字体链接测试测试测试 Title Test 1test test test Hyperlink test test test test 测试标题二测试测试测试测试测试测试测试测试测试  引文测试  测试测试测试测试测试测试测试测试测试 Title Test 2test test codeblock test t">
@@ -121,8 +121,9 @@ var _hmt = _hmt || [];
 
 
 <link rel="stylesheet" href="/css/style.css">
+
 <link rel="stylesheet" href="/css/night.css">
-<link rel="stylesheet" href="/css/carousel.css">
+<link rel="stylesheet" href="/css/swiper.css">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.css">
 <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js"></script>
@@ -264,7 +265,8 @@ var _hmt = _hmt || [];
 </blockquote>
 <p>测试测试测试测试测试测试测试测试测试</p>
 <h2 id="Title-Test-2"><a href="#Title-Test-2" class="headerlink" title="Title Test 2"></a>Title Test 2</h2><p>test test <code>codeblock test</code> test test</p>
-<figure class="highlight plain"><figcaption><span>title</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">code test</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><figcaption><span>title</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">code test</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><figcaption><span>点击展开代码 >folded</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">测试默认折叠代码块</span><br></pre></td></tr></table></figure>
 <p>测试测试测试测试测试测试测试测试测试</p>
 <h3 id="测试标题三"><a href="#测试标题三" class="headerlink" title="测试标题三"></a>测试标题三</h3><p>测试测试测试测试测试测试脚注<a id="fn1" href="#fn1t" ><sup>[1]</sup></a>测试测试</p>
 <h3 id="Title-Test-3"><a href="#Title-Test-3" class="headerlink" title="Title Test 3"></a>Title Test 3</h3><p>测试测试测试测试测试测试 LaTeX 公式</p>
@@ -710,8 +712,33 @@ var _hmt = _hmt || [];
 
 <script src="/js/main.js" defer></script>
 
-<script src="js/carousel.js"></script>
-<script type="text/javascript">jssor_1_slider_init();</script> 
+<script src="js/swiper.min.js"></script>
+<script>
+var mySwiper = new Swiper('.swiper-container', {
+    speed: 500,
+    loop: true,
+    autoplay: {
+        delay: 3500,
+        stopOnLastSlide: false,
+        disableOnInteraction: false,
+        },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable :true,
+    },
+});
+
+mySwiper.el.onmouseover = function(){
+    mySwiper.autoplay.stop();
+}
+mySwiper.el.onmouseleave = function(){
+    mySwiper.autoplay.start();
+}
+</script>
 
 
     

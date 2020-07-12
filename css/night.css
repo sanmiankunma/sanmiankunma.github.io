@@ -348,12 +348,12 @@ body.night {
   -webkit-text-fill-color: #b0b0b0 !important;
   box-shadow: 0 0 0px 1000px #373737 inset;
 }
-.night .jssorb051 .i .b {
-  fill: #eaeaea;
-}
-.night .carousel-arrowleft,
-.night .carousel-arrowright {
+.night .swiper-button-prev,
+.night .swiper-button-next {
   color: #eaeaea;
+}
+.night .swiper-pagination-bullet {
+  background: #eaeaea;
 }
 .night .message.is-warning {
   background-color: #1e1f26;
